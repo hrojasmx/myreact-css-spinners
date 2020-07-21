@@ -1,0 +1,20 @@
+{
+  "name": "myreact-css-spinners",
+  "version": "1.0.0",
+  "description": "css spinners for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrojasmx/myreact-css-spinners.git"
+  },
+  "keywords": ["react", "css", "spinners"],
+  "author": "Hector",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hrojasmx/myreact-css-spinners/issues"
+  },
+  "homepage": "https://github.com/hrojasmx/myreact-css-spinners#readme"
+}
