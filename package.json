@@ -8,6 +8,14 @@
     "lint": "eslint '**/*.js **/*.jsx'",
     "lint:fix": "prettier-eslint '**/*.js' --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["npm run lint:fix", "git add"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hrojasmx/myreact-css-spinners.git"
@@ -26,6 +34,8 @@
   "devDependencies": {
     "eslint": "^7.5.0",
     "eslint-plugin-react": "^7.20.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0"
   }
