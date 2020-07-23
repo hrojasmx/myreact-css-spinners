@@ -2,7 +2,9 @@
   "name": "myreact-css-spinners",
   "version": "1.0.0",
   "description": "css spinners for react",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist",
@@ -50,6 +52,13 @@
     "rollup": "^2.22.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-string": "^2.0.2",
     "rollup-plugin-terser": "^6.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.2"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
